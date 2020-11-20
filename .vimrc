@@ -1,20 +1,17 @@
 set nocompatible
-filetype off
-
-" --- vundle plugins ---
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'morhetz/gruvbox'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'preservim/nerdtree'
-Plugin 'wakatime/vim-wakatime'
-Plugin 'git@github.com:ycm-core/YouCompleteMe'
-
-call vundle#end()
 filetype plugin indent on
+
+" --- vim-plug plugins ---
+call plug#begin('~/.vim/plugged')
+
+Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'preservim/nerdtree'
+Plug 'wakatime/vim-wakatime'
+"Plug 'https://github.com/ycm-core/YouCompleteMe'
+
+call plug#end()
 
 " --- vim config ---
 colorscheme gruvbox
