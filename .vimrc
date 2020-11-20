@@ -9,7 +9,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
 Plug 'wakatime/vim-wakatime'
-"Plug 'https://github.com/ycm-core/YouCompleteMe'
+Plug 'https://github.com/ycm-core/YouCompleteMe'
 
 call plug#end()
 
