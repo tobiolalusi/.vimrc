@@ -11,6 +11,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'preservim/nerdtree'
 Plugin 'wakatime/vim-wakatime'
+Plugin 'git@github.com:ycm-core/YouCompleteMe'
 
 call vundle#end()
 filetype plugin indent on
