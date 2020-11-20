@@ -10,6 +10,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
 Plug 'wakatime/vim-wakatime'
 Plug 'https://github.com/ycm-core/YouCompleteMe'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mileszs/ack.vim'
 
 call plug#end()
 
