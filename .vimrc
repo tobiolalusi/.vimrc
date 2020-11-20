@@ -15,7 +15,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mileszs/ack.vim'
 Plug 'dense-analysis/ale'
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-surround'
+Plug 'mg979/vim-visual-multi'
 
 call plug#end()
 
@@ -57,7 +57,7 @@ let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts=1
 
 " --- nerdtree ---
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-\> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 
