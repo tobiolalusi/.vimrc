@@ -70,6 +70,6 @@ let g:ale_linters = {'asm': []}
 " --- Template config ---
 if has("autocmd")
     augroup templates
-        autocmd BufNewFile *.asm 0r ~/.vim/templates/_.asm
+        autocmd BufNewFile *.* silent! execute '0r ~/.vim/templates/_.'.expand("<afile>:e")
     augroup END
 endif
