@@ -3,6 +3,7 @@
 # setup
 rm -rf ~/.vim/autoload
 rm -rf ~/.vim/plugged
+rm -rf ~/.vim/templates
 
 step_number=0
 done_message="-- DONE --"
@@ -25,6 +26,13 @@ echo "STEP $((++step_number)): setup YouCompleteMe"
 (cd ~/.vim/plugged/YouCompleteMe && python3 install.py --all)
 echo $done_message
 
+# move templates dir
+echo
+echo "STEP $((++step_number)): copying templates to ~/.vim/templates"
+cp -r templates ~/.vim/templates
+echo $done_message
+
+# setup complete
 echo
 echo "---------------------------"
 echo "-  VIM SETUP COMPLETE :)  -"

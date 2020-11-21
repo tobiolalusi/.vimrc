@@ -67,3 +67,9 @@ nnoremap <C-a> :Ack<CR>
 " --- ALE ---
 let g:ale_linters = {'asm': []}
 
+" --- Template config ---
+if has("autocmd")
+    augroup templates
+        autocmd BufNewFile *.asm 0r ~/.vim/templates/_.asm
+    augroup END
+endif
