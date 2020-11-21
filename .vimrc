@@ -64,3 +64,6 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 " --- Ack ---
 nnoremap <C-a> :Ack<CR>
 
+" --- ALE ---
+let g:ale_linters = {'asm': []}
+
