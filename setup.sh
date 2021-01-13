@@ -32,6 +32,12 @@ echo "STEP $((++step_number)): copying templates to ~/.vim/templates"
 cp -r templates ~/.vim/templates
 echo $done_message
 
+# move coc config settings
+echo
+echo "STEP $((++step_number)): copying coc configurations to ~/.vim/coc-settings.json"
+cp coc-settings.json ~/.vim/coc-settings.json
+echo $done_message
+
 # setup complete
 echo
 echo "---------------------------"

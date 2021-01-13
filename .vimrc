@@ -10,12 +10,16 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
 Plug 'wakatime/vim-wakatime'
-Plug 'https://github.com/ycm-core/YouCompleteMe'
+" Plug 'https://github.com/ycm-core/YouCompleteMe'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mileszs/ack.vim'
 Plug 'dense-analysis/ale'
 Plug 'airblade/vim-gitgutter'
-Plug 'mg979/vim-visual-multi'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
+Plug 'xuyuanp/nerdtree-git-plugin'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -57,7 +61,9 @@ let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts=1
 
 " --- nerdtree ---
-nnoremap <C-\> :NERDTreeToggle<CR>
+let NERDTreeIgnore=['\.git$']
+let NERDTreeShowHidden = 1
+noremap <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 
@@ -73,3 +79,4 @@ if has("autocmd")
         autocmd BufNewFile *.* silent! execute '0r ~/.vim/templates/_.'.expand("<afile>:e")
     augroup END
 endif
+
