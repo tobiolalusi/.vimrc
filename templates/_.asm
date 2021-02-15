@@ -4,8 +4,8 @@ section .data
 
 section .text
 
-global _start
+global main
 
-_start:
+main:
     ; begin code here 
     ret
